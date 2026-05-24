@@ -1,13 +1,14 @@
 :root {
   color-scheme: light;
-  --ink: #1f2729;
-  --muted: #647174;
-  --line: #d9e0dd;
-  --paper: #ffffff;
-  --wash: #f4f6f2;
-  --soft: #edf5f2;
-  --accent: #0b6b63;
-  --accent-2: #c65f32;
+  --ink: #241515;
+  --muted: #6b5b50;
+  --line: #ead8c8;
+  --paper: #fffaf4;
+  --wash: #fcf3e9;
+  --soft: #fff1e4;
+  --accent: #f07020;
+  --accent-2: #8b1e24;
+  --gold: #bc9561;
 }
 
 * {
@@ -45,7 +46,7 @@ section,
 .hero {
   display: grid;
   gap: 18px;
-  background: linear-gradient(180deg, #eaf4f1 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #fff1e4 0%, #fffaf4 100%);
 }
 
 .eyebrow {
@@ -81,7 +82,7 @@ h3 {
 
 .lead {
   margin-bottom: 0;
-  color: #405053;
+  color: #5d4e45;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -92,7 +93,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
-  box-shadow: 0 12px 26px rgba(31, 39, 41, 0.08);
+  box-shadow: 0 12px 26px rgba(139, 30, 36, 0.09);
 }
 
 .hero-photo img {
@@ -149,7 +150,7 @@ dd {
   padding: 12px;
   border-left: 4px solid var(--accent);
   background: var(--soft);
-  color: #435154;
+  color: #5d4e45;
   font-size: 13px;
   line-height: 1.75;
 }
@@ -168,8 +169,8 @@ dd {
 }
 
 .rank-card--primary {
-  border-color: rgba(198, 95, 50, 0.35);
-  background: #fff8f3;
+  border-color: rgba(240, 112, 32, 0.35);
+  background: #fff3e8;
 }
 
 .rank {
@@ -194,7 +195,7 @@ dd {
 }
 
 .properties {
-  background: #faf8f2;
+  background: #fcf3e9;
 }
 
 .section-head p {
@@ -204,11 +205,11 @@ dd {
 
 .property-card {
   overflow: hidden;
-  box-shadow: 0 8px 22px rgba(31, 39, 41, 0.07);
+  box-shadow: 0 8px 22px rgba(139, 30, 36, 0.08);
 }
 
 .property-card__media {
-  background: #dfe7e3;
+  background: #f2dfcc;
 }
 
 .property-card__media img {
@@ -238,8 +239,8 @@ dd {
 }
 
 .tag--hot {
-  background: #ffe8d9;
-  color: var(--accent-2);
+  background: #ffe1cc;
+  color: #8b1e24;
 }
 
 .area {
@@ -258,7 +259,7 @@ dd {
 
 .detail-grid div {
   padding: 11px 14px;
-  background: #ffffff;
+  background: #fffaf4;
 }
 
 .cost {
@@ -271,7 +272,7 @@ dd {
 .comment {
   margin: 0;
   padding: 10px 16px 0;
-  color: #435154;
+  color: #5d4e45;
   line-height: 1.7;
 }
 
@@ -286,6 +287,11 @@ dd {
   color: #ffffff;
   font-weight: 900;
   text-decoration: none;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #e87020;
 }
 
 .link-box {
@@ -305,13 +311,13 @@ dd {
 .checks ul {
   margin: 0;
   padding-left: 1.25em;
-  color: #405053;
+  color: #5d4e45;
   line-height: 1.9;
 }
 
 .footer {
-  background: #1f2729;
-  color: #dce6e2;
+  background: #500d11;
+  color: #f7efe7;
 }
 
 .footer p {
