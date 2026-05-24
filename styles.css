@@ -207,6 +207,21 @@ dd {
   box-shadow: 0 8px 22px rgba(31, 39, 41, 0.07);
 }
 
+.property-card__media {
+  background: #dfe7e3;
+}
+
+.property-card__media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.property-card__body {
+  display: grid;
+}
+
 .property-card__head {
   padding: 16px 16px 0;
 }
