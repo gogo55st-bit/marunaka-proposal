@@ -1,0 +1,287 @@
+:root {
+  color-scheme: light;
+  --ink: #1f2729;
+  --muted: #647174;
+  --line: #d9e0dd;
+  --paper: #ffffff;
+  --wash: #f4f6f2;
+  --soft: #edf5f2;
+  --accent: #0b6b63;
+  --accent-2: #c65f32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  background: var(--wash);
+  color: var(--ink);
+  font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  width: min(100%, 900px);
+  min-height: 100vh;
+  margin: 0 auto;
+  background: var(--paper);
+}
+
+.hero,
+section,
+.footer {
+  padding: 24px 18px;
+}
+
+.hero {
+  background: linear-gradient(180deg, #eaf4f1 0%, #ffffff 100%);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 12px;
+  font-size: 38px;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+h3 {
+  margin-bottom: 6px;
+  font-size: 19px;
+}
+
+.lead {
+  margin-bottom: 0;
+  color: #405053;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.summary,
+.ranking,
+.checks {
+  border-top: 1px solid var(--line);
+}
+
+.info-grid {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.info-grid div,
+.rank-card,
+.property-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.info-grid div {
+  padding: 12px;
+}
+
+dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+dd {
+  margin: 4px 0 0;
+  font-weight: 800;
+}
+
+.note {
+  margin: 14px 0 0;
+  padding: 12px;
+  border-left: 4px solid var(--accent);
+  background: var(--soft);
+  color: #435154;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.rank-list,
+.property-list {
+  display: grid;
+  gap: 14px;
+}
+
+.rank-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px;
+  padding: 14px;
+}
+
+.rank-card--primary {
+  border-color: rgba(198, 95, 50, 0.35);
+  background: #fff8f3;
+}
+
+.rank {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.rank-card--primary .rank {
+  background: var(--accent-2);
+}
+
+.rank-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.properties {
+  background: #faf8f2;
+}
+
+.section-head p {
+  margin-bottom: 16px;
+  color: var(--muted);
+}
+
+.property-card {
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(31, 39, 41, 0.07);
+}
+
+.property-card__head {
+  padding: 16px 16px 0;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.tag--hot {
+  background: #ffe8d9;
+  color: var(--accent-2);
+}
+
+.area {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 14px 0 0;
+  background: var(--line);
+}
+
+.detail-grid div {
+  padding: 11px 14px;
+  background: #ffffff;
+}
+
+.cost {
+  margin: 0;
+  padding: 14px 16px 0;
+  color: var(--accent-2);
+  font-weight: 900;
+}
+
+.comment {
+  margin: 0;
+  padding: 10px 16px 0;
+  color: #435154;
+  line-height: 1.7;
+}
+
+.button {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.checks ul {
+  margin: 0;
+  padding-left: 1.25em;
+  color: #405053;
+  line-height: 1.9;
+}
+
+.footer {
+  background: #1f2729;
+  color: #dce6e2;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (min-width: 720px) {
+  .hero,
+  section,
+  .footer {
+    padding: 34px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .property-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
